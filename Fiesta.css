@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    transition: 1s ease;
+  }
+  
+  
+  :root {
+    --h-one: "Fascinate Inline", cursive; /* Titulo */
+    --color-one: #fd0000; /* Color de fondo */
+    --color-two: #ffffff; /* Color de texto */
+    --color-three: #a52a2a;
+    --normal-text: "Open Sans", sans-serif; 
+  }
+  
+  body {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: aqua;
+  }
+  
+  .resume {
+    max-width: 1100px;
+    height: 1200px;
+    position: relative;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 0;
+    border-radius: 1em;
+    border: 1px solid black;
+    background-color: #ff5e00;
+    height: 1300px;
+  }
+  
+  /* header */
+  
+  .frist-nav {
+    max-width: 1100px;
+    height: 55px;
+    background-color: var(--color-one);
+    border-radius: 1em 1em 0 0;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border: 1px solid black; 
+  }
+  .windows-header-icon {
+    position: relative;
+    bottom: 0.6em;
+  }
+  
+  .name-nav {
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  .logo {
+    width: 250px;
+  }
+  .Ability {
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-family: var(--normal-text);
+  }
+  .label-style {
+    font-size: 1em;
+    margin-right: 0.25em;
+  }
+  .input-style {
+    height: 25px;
+    border-radius: 0.3em;
+    padding: 0.3em;
+  }
+  
+  /* left bar */
+  
+  .toolsbar {
+    width: 35px;
+    height: 420px;
+    position: absolute;
+  }
+  
+  .tools-item {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-two);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .tools-item-selected {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* right bar */
+  
+  .setting-bar {
+    width: 35px;
+    height: 270px;
+    position: absolute;
+    right: 0;
+  }
+  .setting-item {
+    width: 35px;
+    height: 45px;
+    background-color: var(--color-two);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* avatar box */
+  
+  .my-photo {
+    width: 500px;
+    height: 400px;
+  }
+  
+  .size-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 0.3em;
+  }
+  
+  .style-box {
+    box-shadow: -0.3em 0.3em rgba(0, 0, 0, 0.3);
+    background-color: var(--color-one);
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+  }
+  
+  .style-box2 {
+    box-shadow: -0.3em 0.3em rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+    border: 6px solid orange;
+    height: 800px;
+  }
+  
+  .style-box3 {
+    box-shadow: -0.3em 0.3em rgba(0, 0, 0, 0.3);
+    background-color: var(--color-one);
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+    width: 350px;
+    text-align: center;
+    height: 480px;
+  }
+  
+  .style-box4 {
+    box-shadow: -0.3em 0.3em rgba(0, 0, 0, 0.3);
+    background-color: var(--color-one);
+    border-radius: 0.6em;
+    border: 1px solid black;
+    position: relative;
+    width: 350px;
+    height: 480px;
+    text-align: center;
+  }
+  
+    .style-box5 {
+        box-shadow: -0.3em 0.3em rgba(0, 0, 0, 0.3);
+        background-color: var(--color-one);
+        border-radius: 0.6em;
+        border: 1px solid black;
+        position: relative;
+        height: 250px;
+        text-align: center;
+    }
+
+  
+  .box-title {
+    font-size: 1em; /*Tamaño de la letra */
+    font-weight: bold; /*Negrita */
+    position: absolute; /*Posicion de la letra */
+    left: 0; 
+    top: 0;
+    margin: 0.4em 0.8em; /*Margen de la letra */
+    color: #fff; /*Color de la letra */
+  }
+  
+  .windows-icon {
+    width: 24px;
+    margin: 0.125em;
+    margin-top: 0.5em;
+  }
+  
+  .avatar {
+    width: 230px;
+    position: absolute;
+    top: 0.6em;
+    left: 15px;
+  }
+  
+  .avatar2 {
+    width: 230px;
+    position: absolute;
+    top: 0.6em;
+    left: 15px;
+  }
+  
+  .avatar3 {
+    width: 130px;
+    position: absolute;
+    top: 0.6em;
+    left: 15px;
+  }
+  
+  .avatar4 {
+    width: 230px;
+    position: absolute;
+    top: 0.6em;
+    left: 15px;
+  }
+  
+    .avatar5 {
+        width: 130px;
+        position: absolute;
+        top: 0.6em;
+        left: 15px;
+    }
+   
+    .avatar10 {
+        width: 130px;
+        position: absolute;
+        top: 0.6em;
+        left: 15px;
+    }
+   
+  /* positions */
+  
+  .avatar-box {
+    position: absolute;
+    left: -120px;
+    top: 150px;
+    z-index: 2;
+  }
+  .avatar-box2 {
+    position: absolute;
+    left: 270px;
+    top: 150px;
+    z-index: 2;
+  }
+
+  .avatar-box10 {
+    position: absolute;
+    right: -120px;
+    top: 150px;
+    z-index: 2;
+  }
+
+  .avatar-box3 {
+    position: absolute;
+    left: -120px;
+    top: 700px;
+    z-index: 2;
+  }
+  
+  .avatar-box4 {
+    position: absolute;
+   right: -120px;
+    top: 700px;
+    z-index: 2;
+  }
+  
+    .avatar-box5 {
+        position: absolute;
+        right: 270px;
+        top: 1025px;
+        z-index: 2;
+    }
+  
+  header {
+    position: relative;
+  }
