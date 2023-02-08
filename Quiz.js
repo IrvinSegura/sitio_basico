@@ -358,7 +358,7 @@ const questions = [
 
 let shuffledQuestions = []
 function handleQuestions() { 
-    while (shuffledQuestions.length <= 19) {
+    while (shuffledQuestions.length <= 20) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -431,7 +431,7 @@ function handleNextQuestion() {
     checkForAnswer()
     unCheckRadioButtons()
     setTimeout(() => {
-        if (indexNumber <= 19) {
+        if (indexNumber <= 20) {
             NextQuestion(indexNumber)
         }
         else {
@@ -471,7 +471,7 @@ function handleEndGame() {
         remark = "Excellent, Keep the good work going."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 19) * 100
+    const playerGrade = (playerScore / 20) * 100
 
     document.getElementById('remarks').innerHTML = remark
     document.getElementById('remarks').style.color = remarkColor
