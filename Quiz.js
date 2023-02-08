@@ -356,10 +356,9 @@ const questions = [
     },
 ];
 
-let shuffledQuestions = [] //empty array to hold shuffled selected questions
-
+let shuffledQuestions = []
 function handleQuestions() { 
-    while (shuffledQuestions.length <= 39) {
+    while (shuffledQuestions.length <= 19) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -432,7 +431,7 @@ function handleNextQuestion() {
     checkForAnswer()
     unCheckRadioButtons()
     setTimeout(() => {
-        if (indexNumber <= 39) {
+        if (indexNumber <= 19) {
             NextQuestion(indexNumber)
         }
         else {
@@ -472,7 +471,7 @@ function handleEndGame() {
         remark = "Excellent, Keep the good work going."
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 39) * 100
+    const playerGrade = (playerScore / 19) * 100
 
     document.getElementById('remarks').innerHTML = remark
     document.getElementById('remarks').style.color = remarkColor
